@@ -1,35 +1,55 @@
-function add() {
-  let a = Number(document.getElementById("num1").value);
-  let b = Number(document.getElementById("num2").value);
-  document.getElementById("result").innerText = "Result: " + (a + b);
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
-function subtract() {
-  let a = Number(document.getElementById("num1").value);
-  let b = Number(document.getElementById("num2").value);
-  document.getElementById("result").innerText = "Result: " + (a - b);
+h1 {
+  margin-top: 20px;
 }
 
-function multiply() {
-  let a = Number(document.getElementById("num1").value);
-  let b = Number(document.getElementById("num2").value);
-  document.getElementById("result").innerText = "Result: " + (a * b);
+.container {
+  background: #1e1e2f;
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
-function divide() {
-  let a = Number(document.getElementById("num1").value);
-  let b = Number(document.getElementById("num2").value);
-  document.getElementById("result").innerText = "Result: " + (a / b);
+input {
+  width: 80%;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
 }
 
-function calculateDiscount() {
-  let price = Number(document.getElementById("price").value);
-  let discount = Number(document.getElementById("discount").value);
-
-  let final = price - (price * discount / 100);
-
-  document.getElementById("finalPrice").innerText = "Final Price: ₹" + final;
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background: #667eea;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
 }
-function toggleDarkMode() {
-  document.body.classList.toggle("dark");
+
+button:hover {
+  background: #5a67d8;
+}
+
+h2 {
+  margin-top: 15px;
+}
+  body.dark {
+  background: #121212 !important;
+  color: white;
+}
 }
